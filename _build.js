@@ -4,10 +4,6 @@ const dbSeed = require('./seeds/destinations.js');
 
 const Destination = require('./models/destination.js');
 
-/*******************************/
-/* Mongoose/MongoDB Connection */
-/*******************************/
-
 const dbURI = process.env.MONGODB_URL;
 mongoose.connect(dbURI, {
   useUnifiedTopology: true,
