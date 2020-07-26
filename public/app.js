@@ -1,6 +1,6 @@
 // Since the execution of this `app.js` script will be long finished by the time the following `fetch()` call returns data, we need to put our loop inside the second .then(). Check out this CSS Tricks article for the details about what's going on here. 
 // https://css-tricks.com/using-fetch/
-fetch('https://cprg210-animals.herokuapp.com/api/animals')
+fetch('https://destinationscprg210.herokuapp.com/api/animals')
   .then(function(response) {
     return response.json();
   })
@@ -21,7 +21,7 @@ fetch('https://cprg210-animals.herokuapp.com/api/animals')
         <a href="${item.id}">
           <img src="https://picsum.photos/id/${item.id}/250" alt="${item.title}">
         </a>
-        <figcaption>Hello ${item.title}!</figcaption>
+        <figcaption>Welcome to ${item.title}!</figcaption>
         </figure>`;
     });
 
